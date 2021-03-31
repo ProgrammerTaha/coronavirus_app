@@ -25,7 +25,7 @@ class APIService {
   }
 
   Future<int> getEndpointData({
-    required String accessToken,
+    required String? accessToken,
     required Endpoint endpoint,
   }) async {
     final uri = api.endpointUri(endpoint);
